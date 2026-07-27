@@ -1,24 +1,57 @@
 aid: hyla
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/hyla.png
 name: HYLA
-description: 'HYLA is a company surfaced as a portfolio company of kleiner-perkins and added to the API
-  Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'HYLA (HYLA Mobile) was a mobile device trade-in and reverse-supply-chain
+  company that ran buyback, trade-in, and device-recommerce programs for carriers,
+  retailers, and manufacturers, reselling and redistributing used smartphones into
+  secondary markets. Backed by Kleiner Perkins, it was acquired and its business
+  folded into Assurant: its site hylamobile.com now permanently redirects to
+  Assurant''s mobile/broadband unit. HYLA is not a public API provider — it publishes
+  no developer portal, documentation, or API, so this profile is an identity-only
+  company record in the API Evangelist network rather than an API catalog entry.'
 url: https://raw.githubusercontent.com/api-evangelist/hyla/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
 - kleiner-perkins
+x-status: acquired
+x-acquired-by: assurant
+x-is-api-provider: false
 x-tier: stub
-x-tier-reason: portfolio-lead
+x-tier-reason: acquired-non-api-provider
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Consumer
+- Mobile
+- Device Trade-In
+- Recommerce
+- Reverse Supply Chain
+- Acquired
+common:
+- type: Website
+  url: https://www.assurant.com/mobile-broadband
 apis: []
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
